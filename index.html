@@ -1,13 +1,68 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Open+Sans&family=Work+Sans:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FECC02",
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'cursive'],
+                        monserrat: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Movie House</title>
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <header>
+        <nav class="bg-white fixed top-0 left-0 right-0">
+
+            <div class="flex justify-between items-center w-full max-w-7xl h-20  mx-auto px-8">
+                <h1 class="text-black font-bold text-xl font-bebas"> Jhakhanaka Production </h1>
+                <ul class="flex gap-3">
+                    <li class="font-bebas text-lg">About Us</li>
+                    <li class="font-bebas text-lg">Our Movies</li>
+                    <li class="font-bebas text-lg">Services</li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- banner section -->
+
+
+        <div class="h-screen bg-[url('images/banner.jpg')] bg-cover  pt-20">
+            <div class="h-full w-full max-w-3xl p-2 justify-center items-center flex">
+                <div class="font-bebas">
+                    <h2 class="text-white text-lg">Movie production studio</h2>
+                    <h1 class="text-white text-7xl">Films MAde to</h1>
+                    <h1 class="text-yellow text-7xl">Perfection</h1>
+                    <p class="max-w-lg font-montserrat text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Ut elit tellus,
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <button class=" border-2 py-2 px-3 text-white mt-3 hover:bg-yellow hover:text-black hover:border-yellow transition-all">Discover More</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
 </body>
+
 </html>
